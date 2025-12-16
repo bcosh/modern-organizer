@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <AssemblyName>DofusOrganizer</AssemblyName>
+    <RootNamespace>DofusOrganizer</RootNamespace>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+
+    <!-- Project Metadata -->
+    <Version>1.0.0</Version>
+    <Authors>Corentin</Authors>
+    <Company>Community Project</Company>
+    <Product>Dofus Organizer</Product>
+    <Description>Application overlay tactile pour gérer facilement vos fenêtres Dofus en multicompte avec support de raccourcis clavier personnalisables.</Description>
+    <Copyright>Copyright © 2025</Copyright>
+
+    <!-- Repository Information -->
+    <RepositoryUrl>https://github.com/VOTRE_USERNAME/organizer-tactile</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/VOTRE_USERNAME/organizer-tactile</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>dofus;overlay;multicompte;gaming;windows;hotkeys</PackageTags>
+  </PropertyGroup>
+
+</Project>
