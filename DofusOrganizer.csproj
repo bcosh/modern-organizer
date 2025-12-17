@@ -7,6 +7,7 @@
     <AssemblyName>DofusOrganizer</AssemblyName>
     <RootNamespace>DofusOrganizer</RootNamespace>
     <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
 
     <!-- Project Metadata -->
     <Version>1.0.0</Version>

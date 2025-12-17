@@ -129,6 +129,19 @@ namespace DofusOrganizer
             // Appliquer l'opacité après InitializeComponent
             this.Opacity = settings.Opacity;
 
+            // Charger la position de la fenêtre ou centrer par défaut
+            if (settings.WindowX >= 0 && settings.WindowY >= 0)
+            {
+                this.Location = new Point(settings.WindowX, settings.WindowY);
+            }
+            else
+            {
+                // Centrer la fenêtre sur l'écran
+                int centerX = (Screen.PrimaryScreen.WorkingArea.Width - this.Width) / 2;
+                int centerY = (Screen.PrimaryScreen.WorkingArea.Height - this.Height) / 2;
+                this.Location = new Point(centerX, centerY);
+            }
+
             SetupOverlay();
             SetupCompactMode();
             SetupContextMenu();
@@ -206,7 +219,9 @@ namespace DofusOrganizer
                 InteractionMode = (int)interactionMode,
                 Opacity = this.Opacity,
                 CompactButtonX = compactButtonPosition.X,
-                CompactButtonY = compactButtonPosition.Y
+                CompactButtonY = compactButtonPosition.Y,
+                WindowX = this.Location.X,
+                WindowY = this.Location.Y
             };
 
             System.Diagnostics.Debug.WriteLine($"Sauvegarde settings: CycleHotkey={settings.CycleHotkey}, LeaderHotkey={settings.LeaderHotkey}, Opacity={settings.Opacity}, Mode={settings.InteractionMode}");
@@ -226,7 +241,6 @@ namespace DofusOrganizer
             this.Name = "MainForm";
             this.Text = "Dofus Organizer";
             this.StartPosition = FormStartPosition.Manual;
-            this.Location = new Point(Screen.PrimaryScreen.WorkingArea.Width - 320, 20);
 
             this.ResumeLayout(false);
         }
@@ -354,6 +368,9 @@ namespace DofusOrganizer
         private void HeaderPanel_MouseUp(object sender, MouseEventArgs e)
         {
             isDragging = false;
+
+            // Sauvegarder la nouvelle position de la fenêtre
+            SaveSettings();
         }
 
         private void SetupSettingsPanel()
@@ -964,7 +981,6 @@ namespace DofusOrganizer
             // Redimensionner
             this.FormBorderStyle = FormBorderStyle.None;
             this.ClientSize = new Size(300, 150);
-            this.Location = new Point(Screen.PrimaryScreen.WorkingArea.Width - 320, 20);
 
             // Rafraîchir pour afficher la liste
             RefreshWindows();
@@ -1094,6 +1110,8 @@ namespace DofusOrganizer
         public double Opacity { get; set; } = 0.95;
         public int CompactButtonX { get; set; } = -1;
         public int CompactButtonY { get; set; } = -1;
+        public int WindowX { get; set; } = -1; // Position de la fenêtre principale
+        public int WindowY { get; set; } = -1;
 
         private static string GetSettingsPath()
         {
