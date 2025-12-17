@@ -68,7 +68,7 @@ namespace DofusOrganizer
             this.ClientSize = new System.Drawing.Size(320, 150);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainFormAdvanced";
-            this.Text = "Dofus Organizer Advanced";
+            this.Text = "Modern Organizer Advanced";
             this.StartPosition = FormStartPosition.Manual;
             this.Location = new Point(Screen.PrimaryScreen.WorkingArea.Width - 340, 20);
             this.KeyPreview = true;
@@ -92,7 +92,7 @@ namespace DofusOrganizer
             
             Label titleLabel = new Label
             {
-                Text = "⚔️ Dofus Organizer",
+                Text = "⚔️ Modern Organizer",
                 ForeColor = Color.White,
                 Font = new Font("Segoe UI", 10, FontStyle.Bold),
                 AutoSize = true,

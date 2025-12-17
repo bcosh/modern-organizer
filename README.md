@@ -1,12 +1,27 @@
-# 🎮 Dofus Organizer
+<div align="center">
+  <img src="Plump_Tofurby.webp" alt="Modern Organizer" width="200" height="200">
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![.NET](https://img.shields.io/badge/.NET-10.0-512BD4)](https://dotnet.microsoft.com/)
-[![Platform](https://img.shields.io/badge/Platform-Windows-0078D4)](https://www.microsoft.com/windows)
+  # 🎮 Modern Organizer
 
-**Application overlay tactile pour gérer facilement vos fenêtres Dofus en multicompte.**
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+  [![.NET](https://img.shields.io/badge/.NET-10.0-512BD4)](https://dotnet.microsoft.com/)
+  [![Platform](https://img.shields.io/badge/Platform-Windows-0078D4)](https://www.microsoft.com/windows)
 
-Une interface moderne et intuitive qui vous permet de basculer instantanément entre vos différents personnages Dofus, avec support de raccourcis clavier personnalisables et deux modes d'interaction (overlay tactile ou système tray).
+  **Une autre application type Organizer avec un support pour jouer sur Tablette.**
+</div>
+
+Une interface moderne et intuitive qui vous permet de basculer instantanément entre vos différentes fenêtres de jeu, avec support de raccourcis clavier personnalisables et deux modes d'interaction (overlay tactile ou système tray).
+
+Je recommande de passer par Moonlight + Sunshine pour jouer sur Tablette. 
+
+
+Sur votre PC avec Dofus:
+[Sunshine Host](https://moonlight-stream.org/)
+
+
+Sur votre tablette:
+[Moonlight Client](https://app.lizardbyte.dev/Sunshine/)
+
 
 ---
 
@@ -15,9 +30,9 @@ Une interface moderne et intuitive qui vous permet de basculer instantanément e
 ### Option 1 : Télécharger la Release (Utilisateurs)
 
 1. Allez dans la section [**Releases**](../../releases) de ce repository
-2. Téléchargez la dernière version (`DofusOrganizer-vX.X.X.zip`)
+2. Téléchargez la dernière version (`ModernOrganizer-vX.X.X.zip`)
 3. Décompressez le fichier ZIP
-4. Lancez `DofusOrganizer.exe`
+4. Lancez `ModernOrganizer.exe`
 
 > **Note** : Aucune installation de .NET n'est nécessaire - l'exécutable est autonome (*self-contained*).
 
@@ -43,7 +58,7 @@ Une interface moderne et intuitive qui vous permet de basculer instantanément e
 
 3. **Lancez l'application**
    ```bash
-   dotnet run --project DofusOrganizer.csproj
+   dotnet run --project ModernOrganizer.csproj
    ```
 
 4. **Créez un exécutable autonome (optionnel)**
@@ -57,7 +72,7 @@ Une interface moderne et intuitive qui vous permet de basculer instantanément e
 ## 📖 Guide Rapide
 
 1. **Lancez Dofus** et connectez vos personnages
-2. **Lancez DofusOrganizer.exe**
+2. **Lancez ModernOrganizer.exe**
 3. **Configurez vos paramètres** :
    - Cliquez sur l'icône ⚙️ pour accéder aux réglages
    - Définissez vos raccourcis clavier

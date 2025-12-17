@@ -239,7 +239,7 @@ namespace DofusOrganizer
             this.ClientSize = new System.Drawing.Size(300, 150);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainForm";
-            this.Text = "Dofus Organizer";
+            this.Text = "Modern Organizer";
             this.StartPosition = FormStartPosition.Manual;
 
             this.ResumeLayout(false);
@@ -263,7 +263,7 @@ namespace DofusOrganizer
             
             Label titleLabel = new Label
             {
-                Text = "⚔️ Dofus Organizer",
+                Text = "⚔️ Modern Organizer",
                 ForeColor = Color.White,
                 Font = new Font("Segoe UI", 10, FontStyle.Bold),
                 AutoSize = true,
@@ -858,7 +858,7 @@ namespace DofusOrganizer
             {
                 Icon = SystemIcons.Application,
                 Visible = false,
-                Text = "Dofus Organizer"
+                Text = "Modern Organizer"
             };
 
             // Menu contextuel du tray
@@ -897,7 +897,7 @@ namespace DofusOrganizer
                 // Mode classique: cacher l'overlay et aller dans le tray
                 this.Hide();
                 trayIcon.Visible = true;
-                trayIcon.ShowBalloonTip(2000, "Dofus Organizer",
+                trayIcon.ShowBalloonTip(2000, "Modern Organizer",
                     "L'application est maintenant dans la barre des tâches. Utilisez les raccourcis clavier pour changer de fenêtre.",
                     ToolTipIcon.Info);
             }
@@ -928,7 +928,7 @@ namespace DofusOrganizer
                 // Mode classique: aller dans le tray
                 this.Hide();
                 trayIcon.Visible = true;
-                trayIcon.ShowBalloonTip(2000, "Dofus Organizer",
+                trayIcon.ShowBalloonTip(2000, "Modern Organizer",
                     "L'application est maintenant dans la barre des tâches. Utilisez les raccourcis clavier pour changer de fenêtre.",
                     ToolTipIcon.Info);
             }
